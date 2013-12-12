@@ -1,0 +1,120 @@
+.progress {
+    background-image:url('progress.png');
+    background-repeat:no-repeat;
+    padding: 0px;
+}
+
+.grey {
+    width:757px;
+    height:115px;
+    background-position: 0 -538;
+}
+
+.green {
+    position:relative;
+    top: -102px;
+    left: 12px;
+    width:757px;
+    height:115px;
+}
+
+/* select the correct green */
+.stage1 .green { background-position: 0 0; }
+.stage2 .green { background-position: 0 -138; }
+.stage3 .green { background-position: 0 -274px; }
+.stage4 .green { background-position: 0 -412px; }
+.stage5 .green { background-position: 0 -412px; }
+
+.dot {
+    position: relative;
+    display: inline;
+    font-family: sans;
+    font-size:40px;
+    color: #999;
+}
+
+/* position text for future states */
+.stage1 .dot2 { left:178px; }
+.stage1 .dot3 { left:352px; }
+.stage1 .dot4 { left:546px; }
+.stage2 .dot3 { left:305px; }
+.stage2 .dot4 { left:496px; }
+.stage3 .dot4 { left:449px; }
+
+/* add a hidden 1 for stage 0 */
+.stage1 .dot1:before { content: ""; }
+
+/* text for future states */
+.dot2:before { content: "2"; }
+.dot3:before { content: "3"; }
+.dot4:before { content: "4"; }
+
+/* remove the text for past states */
+.stage2 .dot2:before, .stage3 .dot2:before { content: ""; }
+.stage3 .dot3:before, .stage4 .dot3:before { content: ""; }
+.stage4 .dot:before { content: ""; }
+.stage5 .dot:before { content: ""; }
+
+
+/* define tick */
+.dot1,
+.stage2 .dot2, .stage3 .dot2, .stage4 .dot2, .stage5 .dot2, 
+.stage3 .dot3, .stage4 .dot3, .stage5 .dot3,
+.stage5 .dot4 
+{
+    background-image:url('tick.png');
+    background-repeat:no-repeat;
+    padding: 40px;
+}
+
+/* locate dots at different stages */
+.stage2 .dot2, .stage3 .dot2, .stage4 .dot2, .stage5 .dot2 { top: -155px; left: 170px; }
+.stage3 .dot3, .stage4 .dot3, .stage5 .dot3 { top: -155px; left: 294px; }
+.stage5 .dot4 { top: -155px; left: 440px; }
+
+/* dot look */
+.process_dot {
+    position:relative;
+    width: 50px;
+    height: 50px;
+    background: #eaeaea;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+/* locate dot */
+.dot1 { top: -155px; left: 35px; }
+.dot2 { top: -195px; left: 232px; }
+.dot3 { top: -195px; left: 404px; }
+.dot4 { top: -195px; left: 598px; }
+
+
+/* place process dots */
+.stage1 .process_dot { top:-244px; left:30px; }
+.stage2 .process_dot { top:-244px; left:247px; }
+.stage3 .process_dot { top:-244px; left:450px; }
+.stage4 .process_dot { top:-244px; left:675px; }
+.stage5 .process_dot { visibility: hidden; }
+
+
+/* set label text */
+.label1:after { content:"Stage1" }
+.label2:after { content:"Stage2" }
+.label3:after { content:"Stage3" }
+.label4:after { content:"Stage4" }
+
+/* set label look */
+.label {
+    position: relative;
+    font-size:20px;
+    font-family: sans;
+}
+
+/* position labels */
+.label1 { top: -200px; left: 20; }
+.label2 { top: -223px; left: 240; }
+.label3 { top: -246px; left: 440; }
+.label4 { top: -269px; left: 668; }
+
+
