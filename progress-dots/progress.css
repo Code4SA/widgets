@@ -11,7 +11,7 @@
 .c4sa-grey {
     width:757px;
     height:115px;
-    background-position: 0 -538;
+    background-position: 0 -538px;
 }
 
 .c4sa-green {
@@ -115,9 +115,9 @@
 }
 
 /* position labels */
-.label1 { top: -200px; left: 20; }
-.label2 { top: -223px; left: 240; }
-.label3 { top: -246px; left: 440; }
-.label4 { top: -269px; left: 668; }
+.label1 { top: -200px; left: 20px; }
+.label2 { top: -223px; left: 240px; }
+.label3 { top: -246px; left: 440px; }
+.label4 { top: -269px; left: 668px; }
 
 
