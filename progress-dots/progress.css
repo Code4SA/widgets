@@ -1,16 +1,16 @@
-.progress {
+.c4sa-progress {
     background-image:url('progress.png');
     background-repeat:no-repeat;
     padding: 0px;
 }
 
-.grey {
+.c4sa-grey {
     width:757px;
     height:115px;
     background-position: 0 -538;
 }
 
-.green {
+.c4sa-green {
     position:relative;
     top: -102px;
     left: 12px;
@@ -19,13 +19,13 @@
 }
 
 /* select the correct green */
-.stage1 .green { background-position: 0 0; }
-.stage2 .green { background-position: 0 -138; }
-.stage3 .green { background-position: 0 -274px; }
-.stage4 .green { background-position: 0 -412px; }
-.stage5 .green { background-position: 0 -412px; }
+.stage1 .c4sa-green { background-position: 0 0; }
+.stage2 .c4sa-green { background-position: 0 -138; }
+.stage3 .c4sa-green { background-position: 0 -274px; }
+.stage4 .c4sa-green { background-position: 0 -412px; }
+.stage5 .c4sa-green { background-position: 0 -412px; }
 
-.dot {
+.c4sa-dot {
     position: relative;
     display: inline;
     font-family: sans;
@@ -34,11 +34,11 @@
 }
 
 /* position text for future states */
-.stage1 .dot2 { left:178px; }
-.stage1 .dot3 { left:352px; }
-.stage1 .dot4 { left:546px; }
-.stage2 .dot3 { left:305px; }
-.stage2 .dot4 { left:496px; }
+.stage1 .dot2 { left:184px; }
+.stage1 .dot3 { left:366px; }
+.stage1 .dot4 { left:568px; }
+.stage2 .dot3 { left:308px; }
+.stage2 .dot4 { left:510px; }
 .stage3 .dot4 { left:449px; }
 
 /* add a hidden 1 for stage 0 */
@@ -52,8 +52,8 @@
 /* remove the text for past states */
 .stage2 .dot2:before, .stage3 .dot2:before { content: ""; }
 .stage3 .dot3:before, .stage4 .dot3:before { content: ""; }
-.stage4 .dot:before { content: ""; }
-.stage5 .dot:before { content: ""; }
+.stage4 .c4sa-dot:before { content: ""; }
+.stage5 .c4sa-dot:before { content: ""; }
 
 
 /* define tick */
@@ -105,7 +105,7 @@
 .label4:after { content:"Stage4" }
 
 /* set label look */
-.label {
+.c4sa-label {
     position: relative;
     font-size:20px;
     font-family: sans;
