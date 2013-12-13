@@ -1,3 +1,7 @@
+.c4sa-container{
+    line-height: 1;
+}
+
 .c4sa-progress {
     background-image:url('progress.png');
     background-repeat:no-repeat;
@@ -12,15 +16,15 @@
 
 .c4sa-green {
     position:relative;
-    top: -102px;
+    top: -104px;
     left: 12px;
     width:757px;
     height:115px;
 }
 
 /* select the correct green */
-.stage1 .c4sa-green { background-position: 0 0; }
-.stage2 .c4sa-green { background-position: 0 -138; }
+.stage1 .c4sa-green { background-position: 0 2px; }
+.stage2 .c4sa-green { background-position: 0 -136px; }
 .stage3 .c4sa-green { background-position: 0 -274px; }
 .stage4 .c4sa-green { background-position: 0 -412px; }
 .stage5 .c4sa-green { background-position: 0 -412px; }
@@ -28,17 +32,16 @@
 .c4sa-dot {
     position: relative;
     display: inline;
-    font-family: sans;
     font-size:40px;
     color: #999;
 }
 
 /* position text for future states */
 .stage1 .dot2 { left:184px; }
-.stage1 .dot3 { left:366px; }
-.stage1 .dot4 { left:568px; }
-.stage2 .dot3 { left:308px; }
-.stage2 .dot4 { left:510px; }
+.stage1 .dot3 { left:365px; }
+.stage1 .dot4 { left:565px; }
+.stage2 .dot3 { left:306px; }
+.stage2 .dot4 { left:507px; }
 .stage3 .dot4 { left:449px; }
 
 /* add a hidden 1 for stage 0 */
@@ -68,9 +71,9 @@
 }
 
 /* locate dots at different stages */
-.stage2 .dot2, .stage3 .dot2, .stage4 .dot2, .stage5 .dot2 { top: -155px; left: 170px; }
-.stage3 .dot3, .stage4 .dot3, .stage5 .dot3 { top: -155px; left: 294px; }
-.stage5 .dot4 { top: -155px; left: 440px; }
+.stage2 .dot2, .stage3 .dot2, .stage4 .dot2, .stage5 .dot2 { top: -152px; left: 170px; }
+.stage3 .dot3, .stage4 .dot3, .stage5 .dot3 { top: -152px; left: 294px; }
+.stage5 .dot4 { top: -152px; left: 440px; }
 
 /* dot look */
 .process_dot {
@@ -84,17 +87,17 @@
 }
 
 /* locate dot */
-.dot1 { top: -155px; left: 35px; }
-.dot2 { top: -195px; left: 232px; }
-.dot3 { top: -195px; left: 404px; }
-.dot4 { top: -195px; left: 598px; }
+.dot1 { top: -152px; left: 35px; }
+.dot2 { top: -192px; left: 232px; }
+.dot3 { top: -192px; left: 404px; }
+.dot4 { top: -192px; left: 598px; }
 
 
 /* place process dots */
-.stage1 .process_dot { top:-244px; left:30px; }
-.stage2 .process_dot { top:-244px; left:247px; }
-.stage3 .process_dot { top:-244px; left:450px; }
-.stage4 .process_dot { top:-244px; left:675px; }
+.stage1 .process_dot { top:-238px; left:30px; }
+.stage2 .process_dot { top:-238px; left:247px; }
+.stage3 .process_dot { top:-238px; left:450px; }
+.stage4 .process_dot { top:-238px; left:675px; }
 .stage5 .process_dot { visibility: hidden; }
 
 
@@ -108,7 +111,7 @@
 .c4sa-label {
     position: relative;
     font-size:20px;
-    font-family: sans;
+    padding-top: 5px;
 }
 
 /* position labels */
