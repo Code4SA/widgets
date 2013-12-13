@@ -22,6 +22,10 @@
     height:115px;
 }
 
+.c4sa-stage {
+    height: 40px;
+}
+
 /* select the correct green */
 .stage1 .c4sa-green { background-position: 0 2px; }
 .stage2 .c4sa-green { background-position: 0 -136px; }
