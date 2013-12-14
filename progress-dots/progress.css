@@ -1,17 +1,17 @@
-.c4sa-container{
+.progress-container{
     position: relative;
     line-height: 1;
     height: 155px;
     width: 797px;
 }
 
-.c4sa-progress {
+.progress-container .widget-progress {
     background-image:url('progress.png');
     background-repeat:no-repeat;
     padding: 0px;
 }
 
-.c4sa-grey {
+.progress-container .grey {
     position: absolute;
     width:757px;
     height:115px;
@@ -19,7 +19,7 @@
     background-position: 0 -538px;
 }
 
-.c4sa-green {
+.progress-container .green {
     position:absolute;
     top: 11px;
     left: 32px;
@@ -27,22 +27,19 @@
     height:115px;
 }
 
-.c4sa-stage {
-    height: 40px;
-}
-
 /* select the correct green */
-.stage1 .c4sa-green { background-position: 0 2px; }
-.stage2 .c4sa-green { background-position: 0 -136px; }
-.stage3 .c4sa-green { background-position: 0 -274px; }
-.stage4 .c4sa-green { background-position: 0 -412px; }
-.stage5 .c4sa-green { background-position: 0 -412px; }
+.progress-container .stage1 .green { background-position: 0 2px; }
+.progress-container .stage2 .green { background-position: 0 -136px; }
+.progress-container .stage3 .green { background-position: 0 -274px; }
+.progress-container .stage4 .green { background-position: 0 -412px; }
+.progress-container .stage5 .green { background-position: 0 -412px; }
 
-.c4sa-dot {
+.progress-container .dot {
     position: absolute;
     display: inline;
     font-size:40px;
     color: #999;
+    font-family: sans;
 }
 
 /* add a hidden 1 for stage 0 */
@@ -54,10 +51,10 @@
 .dot4:before { content: "4"; }
 
 /* remove the text for past states */
-.stage2 .dot2:before, .stage3 .dot2:before { content: ""; }
-.stage3 .dot3:before, .stage4 .dot3:before { content: ""; }
-.stage4 .c4sa-dot:before { content: ""; }
-.stage5 .c4sa-dot:before { content: ""; }
+.progress-container .stage2 .dot2:before, .stage3 .dot2:before { content: ""; }
+.progress-container .stage3 .dot3:before, .stage4 .dot3:before { content: ""; }
+.progress-container .stage4 .dot:before { content: ""; }
+.progress-container .stage5 .dot:before { content: ""; }
 
 
 /* define tick */
@@ -106,12 +103,15 @@
 .label4:after { content:"Stage4" }
 
 /* set label look */
-.c4sa-label {
+.progress-container .label {
     position: absolute;
     text-align: center;
     width: 140px;
     font-size:14px;
     padding-top: 5px;
+    font-family: sans;
+    color: #999;
+    display: block;
 }
 
 /* position labels */
